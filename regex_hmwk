@@ -1,0 +1,16 @@
+import re
+
+#import regex function
+#create a function for names list/variables
+#match names with specific regex
+#print name if valid
+#print invalid if name does not match
+
+names = ["Abraham Lincoln", "Andrew P Garfield", "peter pan", "Connor Milliken", "Jordan Alexander Williams", "Madonna", "programming is cool"]
+
+for name in names: 
+    name_match= re.match(r"[A-Z][A-Za-z]+\s", name)
+    if name_match:
+        print (name)
+    else:
+        print('invalid name')
